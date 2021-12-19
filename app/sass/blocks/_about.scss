@@ -1,0 +1,118 @@
+.about {
+    &__parent {
+        padding-top: 17px;
+    @media (min-width:768px) {
+        display: flex;
+        margin: 0 -20px;
+        padding-top: 72px;
+        }
+    }
+    @media (min-width:992px) {
+        max-width: 1095px;
+        padding-bottom: 79px;
+    }
+    &__heading {
+        font-size: 32px;
+        line-height: 38px;
+        color: #F0145A;
+        padding-bottom: 19px;
+        @media (min-width:992px) {
+            font-size: 42px;
+            line-height: 50px;
+            padding-bottom: 20px;
+        }
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 26px;
+        color: #000000;
+        padding-bottom: 20px;
+        @media (min-width:992px) {
+            font-size: 21px;
+            line-height: 30px;
+        }
+    }
+    &__information {
+        @media (min-width:768px) {
+            width: 62%;
+        }
+    }
+    &__description {
+        @media (min-width:768px) {
+            width: 38%;
+        }
+    }
+    &__main {
+        border-top: 4px solid #E6E6F0;
+        padding-top: 15px;
+        padding-bottom: 28px;
+        @media (min-width:768px) {
+            border-top: none;
+            border-left: 4px solid #E6E6F0;
+            padding-left: 20px;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+    &__item {
+        margin-bottom: 10px;
+    }
+    &__heading-value {
+        font-size: 36px;
+        line-height: 42px;
+        color: #F0145A;
+        padding-bottom: 7px;
+        display: flex;
+        @media (min-width:992px) {
+            padding-bottom: 15px;
+        }
+        &::before {
+            content: '';
+            width: 32px;
+            height: 32px;
+            display: block;
+            background-image: url('../img/about-flag.svg');
+            margin-right: 6px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            @media (min-width:992px) {
+                margin-top: 10px;
+            }
+        }
+        &_middle {
+            padding-top: 6px;
+            padding-bottom: 7px;
+            @media (min-width:992px) {
+                padding-top: 30px;
+            }
+            &::before {
+                background-image: url('../img/about-paper.svg');
+                padding-top: 10px;
+                @media (min-width:992px) {
+                    padding-top: 0;
+                    margin-top: 6px;
+                }
+            }
+        }
+        &_bottom {
+            padding-bottom: 10px;
+            padding-top: 9px;
+            @media (min-width:992px) {
+                padding-top: 27px;
+            }
+            &::before {
+                background-image: url('../img/about-years.svg');
+                padding-top: 9px;
+                @media (min-width:992px) {
+                    padding-top: 0;
+                    margin-top: 6px;
+                }
+            }
+        }
+    }
+    &__text-item {
+        font-size: 18px;
+        line-height: 21px;
+        color: #323264;
+    }
+}

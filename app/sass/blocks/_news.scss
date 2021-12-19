@@ -1,0 +1,101 @@
+.news {
+    background-color: #F5F5FA;
+    &__heading {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 38px;
+        color: #F0145A;
+        padding-top: 3px;
+        @media (min-width:768px) {
+            padding-bottom: 40px;
+            font-size: 42px;
+            line-height: 50px;
+        }
+    }
+    &__main {
+        margin-top: 25px;
+        @media (min-width:768px) {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -20px;
+            margin-bottom: 35px;
+            @media (min-width:992px) {
+                margin-bottom: 18px;
+            }
+        }
+    }
+    &__item {
+        padding-bottom: 27px;
+        &_disabled {
+            display: none;
+        }
+        @media (min-width:768px) {
+            padding: 0 20px;
+            width: 50%;
+            margin-bottom: 57px;
+             &_disabled {
+            display: block;
+        }
+        }
+        @media (min-width:992px) {
+            width: 33.3333%;
+            margin-bottom: 41px;
+        }
+    }
+    &__wrap {
+        background-color: #FFFFFF;
+        border-radius: 8px;
+        padding-bottom: 20px;
+        height: 100%;
+        @media (min-width:992px) {
+            padding-bottom: 36px;
+        }
+    }
+    &__details {
+        cursor: pointer;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #24A3FF;
+        &:hover {
+            color: #F0145A;
+        }
+    }
+    &__text {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 1px;
+        color: #B3B3BA;
+        text-transform: uppercase;
+        padding-top: 10px;
+        @media (min-width:768px) {
+            padding-bottom: 15px;
+            border-bottom: 4px solid #E6E6F0;
+        }
+    }
+    &__text-desc {
+        display: none;
+        @media (min-width:768px) {
+            display: block;
+            padding-top: 20px;
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+    &__img {
+        display: block;
+        width: 100%;
+        border-radius: 8px 8px 0px 0px;
+    }
+    &__link {
+        display: block;
+        cursor: pointer;
+        text-decoration: none;
+        border-radius: 8px 8px 0px 0px;
+    }
+    &__information {
+        margin: 20px 20px 0;
+    }
+}

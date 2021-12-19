@@ -1,0 +1,43 @@
+.popup-active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    @media (min-width:992px) {
+        background-color: rgba(50, 50, 100, 0.7);
+    }
+    &__body {
+        width: 527px;
+        height: 576px;
+        border-radius: 12px;
+        background-color: #F5F5FA;
+        padding-top: 28px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__spinner {
+        display: flex;
+         justify-content: center;
+    }
+    &__spinner svg{
+        animation-name: spinner;
+        animation-duration: 2s;
+        animation-iteration-count: 3;
+        animation-timing-function: linear;
+        transform: rotate(0);
+    }
+
+    @keyframes spinner {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+}

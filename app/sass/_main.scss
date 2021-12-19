@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    max-width: 1360px;
+    min-width: 335px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.body {
+    font-family: 'TT Norms', 'Arial', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    min-width: 375px;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 0;
+    clip: rect(0 0 0 0);
+  }
+
+  .main {
+      position: relative;
+  }

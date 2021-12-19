@@ -1,0 +1,20 @@
+.link {
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #24A3FF;
+    &:hover {
+        color: #F0145A;
+    }
+    &:hover path {
+        stroke: #F0145A;
+    }
+    &__arrow {
+        margin-left: 2px;
+        margin-top: 3px;
+}
+}

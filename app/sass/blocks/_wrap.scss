@@ -1,0 +1,15 @@
+.wrap {
+    background: url('../img/background-img-01.svg') no-repeat;
+    background-position: top;
+    @media (min-width:990px) {
+        background: url('../img/background-img-01.svg') no-repeat,  url('../img/background-main.png') no-repeat;
+        background-position: bottom center, top center;
+  }
+	&__main {
+		padding-bottom: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+	}
+}

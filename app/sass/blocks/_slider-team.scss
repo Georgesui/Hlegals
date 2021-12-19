@@ -1,0 +1,115 @@
+.slider-team {
+    background-color: #FFFF;
+    padding-bottom: 30px;
+    &__main {
+        background-color: #F5F5FA;
+        border-radius: 12px;
+    }
+    &__text {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 38px;
+        color: #F0145A;
+        padding-top: 3px;
+        @media (min-width:992px) {
+            font-size: 42px;
+            line-height: 50px;
+            max-width: 783px;
+        }
+    }
+    &__name {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #B3B3BA;
+        padding-bottom: 5px;
+    }
+    &__post {
+        font-size: 16px;
+        line-height: 22px;
+        color: #B3B3BA;
+        padding-top: 8px;
+        @media (min-width:992px) {
+            padding-top: 5px;
+        }
+    }
+    &__details {
+        padding: 20px 17px 0 15px;
+        margin-bottom: 7px;
+        display: grid;
+        grid-template-columns: 60px 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:  "text text"
+                              "photo name";
+         @media (min-width:992px) {
+            grid-template-columns: auto 1fr;
+            grid-template-rows: auto 1fr;
+            grid-template-areas:  "photo text"
+                                  "photo name";
+            column-gap: 40px;
+            padding: 0;
+         }
+    }
+    &__common {
+        padding-bottom: 10px;
+        grid-area: text;
+        @media (min-width:992px) {
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }
+    }
+    &__picture {
+        grid-area: photo;
+    }
+    &__information {
+        padding-left: 10px;
+        grid-area: name;
+        @media (min-width:992px) {
+            padding-left: 0px;
+            align-self: start;
+        }
+    }
+    &__name {
+        padding-bottom: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        &:hover {
+            color: #F0145A;
+        }
+    }
+    &__photo {
+        border-radius: 50%;
+        @media (min-width:992px) {
+            border-radius: 0;
+            display: block;
+        }
+    }
+    &__list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        & li {
+            margin-right: 12px;
+            margin-top: 6px;
+            @media (min-width:992px) {
+                margin-top: 17px;
+            }
+        }
+    }
+    &__btn {
+        width: 16px;
+        height: 16px;
+        background-color: #24A3FF;
+        opacity: 0.2;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.6;
+        }
+        &_active {
+            opacity: 1;
+        }
+    }
+}

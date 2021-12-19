@@ -1,0 +1,11 @@
+.news-optional {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    @media (min-width:768px) {
+        padding-top: 40px;
+    }
+  @media (min-width:992px) {
+    padding-bottom: 35px;
+    }
+  }
+

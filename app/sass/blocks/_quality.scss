@@ -1,0 +1,53 @@
+.quality {
+    display: flex;
+    justify-content: center;
+    &__parent {
+    padding: 20px 0;
+    @media (min-width:992px) {
+        padding: 0;
+        margin: 0 -20px;
+        display: flex;
+        max-width: 1135px;
+        margin-top: 80px;
+        margin-bottom: 93px;
+    }
+}
+    &__information {
+        padding-bottom: 20px;
+        @media (min-width:992px) {
+            padding: 0 20px;
+            width: 60%;
+        }
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 26px;
+        color: #000000;
+        margin-bottom: 20px;
+        @media (min-width:992px) {
+            font-size: 21px;
+            line-height: 30px;
+        }
+        &_last {
+            margin-bottom: 0;
+        }
+    }
+    &__heading-info {
+        font-size: 32px;
+        line-height: 38px;
+        color: #F0145A;
+        padding-bottom: 20px;
+        max-width: 311px;
+        @media (min-width:992px) {
+            font-size: 42px;
+            line-height: 50px;
+            max-width: none;
+        }
+    }
+    &__heading {
+        @media (min-width:992px) {
+            padding: 0 20px;
+            width: 40%;
+        }
+    }
+}
